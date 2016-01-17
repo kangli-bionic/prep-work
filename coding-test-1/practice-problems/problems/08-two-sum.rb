@@ -5,6 +5,20 @@
 # Difficulty: medium.
 
 def two_sum(nums)
+  ind1 = 0
+  
+while ind1 < nums.length
+  ind2 = 0
+  while ind2 < nums.length
+    if nums[ind1] + nums[ind2] == 0
+      return [ind1,ind2]
+    
+    end
+   ind2 += 1
+  end
+   ind1 += 1
+end
+return nil
 end
 
 # These are tests to check that your code is working. After writing
@@ -16,3 +30,5 @@ puts(
 puts(
   'two_sum([1, 3, 5]) == nil: ' + (two_sum([1, 3, 5]) == nil).to_s
 )
+
+

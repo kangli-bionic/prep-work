@@ -5,6 +5,12 @@
 # Difficulty: medium.
 
 def nearby_az(string)
+if string.split(//).include?("a") && string.split(//).include?("z")
+  if string.split(//).index("a") < string.split(//).index("z")
+    
+  return true
+end
+end
 end
 
 # These are tests to check that your code is working. After writing

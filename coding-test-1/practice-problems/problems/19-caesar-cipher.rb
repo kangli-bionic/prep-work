@@ -24,6 +24,18 @@
 # information, we would not give it to you on the timed challenge. :-)
 
 def caesar_cipher(offset, string)
+   words = string.split(" ")
+
+  word_idx = 0
+  while word_idx < words.length
+    word = words[word_idx]
+
+    letter_idx = 0
+    
+  
+
+  print words.join(" ")
+end
 end
 
 # These are tests to check that your code is working. After writing

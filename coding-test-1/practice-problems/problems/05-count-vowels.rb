@@ -5,6 +5,7 @@
 # Difficulty: easy.
 
 def count_vowels(string)
+string.scan(/[aeiou]/).count
 end
 
 # These are tests to check that your code is working. After writing

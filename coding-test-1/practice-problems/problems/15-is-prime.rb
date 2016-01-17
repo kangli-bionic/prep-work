@@ -13,6 +13,7 @@
 # Difficulty: medium.
 
 def is_prime?(number)
+  return true if number % 2 || number % 3 == 0
 end
 
 # These are tests to check that your code is working. After writing

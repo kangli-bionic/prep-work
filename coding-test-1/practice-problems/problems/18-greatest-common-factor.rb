@@ -5,6 +5,17 @@
 # Difficulty: medium.
 
 def greatest_common_factor(number1, number2)
+  idx = 1
+  ary = []
+  while idx < number2
+  if number1 % idx == 0 && number2 % idx == 0
+    ary << idx
+    idx += 1
+  else
+    idx += 1
+  end
+end
+ ary.sort[-1]
 end
 
 # These are tests to check that your code is working. After writing

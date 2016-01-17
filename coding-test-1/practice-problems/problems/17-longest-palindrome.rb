@@ -15,7 +15,7 @@
 #     "abcd".slice(2, 2) == "cd"
 #
 # Difficulty: hard.
-
+require 'pry'
 def palindrome?(string)
   i = 0
   while i < string.length
@@ -30,6 +30,33 @@ def palindrome?(string)
 end
 
 def longest_palindrome(string)
+ idx = 0
+ lth = 3
+ ary = []
+ if palindrome?(string) == true
+    ary << string
+  else
+    while idx <= string.length
+   
+    
+  
+    if palindrome?(string.slice(idx,lth)) == true 
+      ary << string.slice(idx,lth)
+      idx += 1
+      lth += 1
+    elsif palindrome?(string.slice(idx,lth)) == false
+        idx += 1 
+     elsif idx = string.length
+        lth += 1
+        idx = 0
+      else
+        idx += 1
+      
+       
+    end
+  end
+ end
+   ary.max_by { |x| x.length }
 end
 
 # These are tests to check that your code is working. After writing
@@ -47,3 +74,4 @@ puts(
   'longest_palindrome("abcbdeffe") == "effe": ' +
   (longest_palindrome('abcbdeffe') == 'effe').to_s
 )
+

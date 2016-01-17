@@ -5,6 +5,12 @@
 # Difficulty: medium.
 
 def scramble_string(string, positions)
+str = string.split(//)
+new_str =[]
+positions.each {|x| new_str << str[x]  }
+
+return new_str.join
+
 end
 
 # These are tests to check that your code is working. After writing

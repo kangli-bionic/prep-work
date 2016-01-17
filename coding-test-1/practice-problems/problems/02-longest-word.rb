@@ -7,6 +7,8 @@
 # Difficulty: easy.
 
 def longest_word(sentence)
+    sen = sentence.split
+   sen.max_by {|x| x.length}
 end
 
 # These are tests to check that your code is working. After writing

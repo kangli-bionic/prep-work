@@ -5,7 +5,18 @@
 # Difficulty: medium.
 
 def most_common_letter(string)
+  #first loop will go through and find a letter and then count
+ind = 0
+  while ind < string.length
+   
+    if string.count(string[ind]) > string.count(string[ind+1])
+      return [string[ind],string.count(string[ind])]
+    end
+    ind += 1
+  end
 end
+
+
 
 # These are tests to check that your code is working. After writing
 # your solution, they should all print true.

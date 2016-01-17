@@ -23,6 +23,19 @@ def is_prime?(number)
 end
 
 def nth_prime(n)
+  ary = []
+
+  idx = 0
+  while idx < 20
+  if is_prime?(idx) == true
+     ary << idx
+     idx += 1
+  else
+    idx += 1
+  end
+
+end
+   ary[n-1].to_i
 end
 
 # These are tests to check that your code is working. After writing
